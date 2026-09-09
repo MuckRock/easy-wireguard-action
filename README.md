@@ -19,10 +19,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v7
 
     - name: Set up WireGuard Connection
-      uses: niklaskeerl/easy-wireguard-action@v2
+      uses: MuckRock/easy-wireguard-action@main
       with:
         WG_CONFIG_FILE: ${{ secrets.WG_CONFIG_FILE }}
 ```
